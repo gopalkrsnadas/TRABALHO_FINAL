@@ -1,23 +1,30 @@
 package models;
 
-public class loja {
-    private int id;
+import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+@Entity
+public class Loja {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
     private String nome;
     private String endereco;
 
     //construtor
-    public loja(int id, String nome, String endereco) {
+    public Loja(Integer id, String nome, String endereco) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;
     }
 
     // getters e setters
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

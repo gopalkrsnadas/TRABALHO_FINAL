@@ -1,14 +1,24 @@
 package models;
 
-public class produto {
-    private int id;
+import org.springframework.data.annotation.Id;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Produto {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
     private String nome;
     private String descricao;
     private double preco;
-    private int quantidade;
+    private Integer quantidade;
 
     //construtor
-    public produto(int id, String nome, String descricao, double preco, int quantidade) {
+    public Produto(Integer id, String nome, String descricao, double preco, Integer quantidade) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
@@ -16,11 +26,11 @@ public class produto {
         this.quantidade = quantidade;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -48,11 +58,11 @@ public class produto {
         this.preco = preco;
     }
 
-    public int getQuantidade() {
+    public Integer getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
     }
 }

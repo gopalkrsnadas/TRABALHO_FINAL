@@ -1,13 +1,22 @@
 package models;
 
-public class cliente {
-    private int id;
+import org.springframework.data.annotation.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Cliente {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
     private String nome;
     private String email;
     private String senha;
 
     //construtor
-    public cliente(int id, String nome, String email, String senha) {
+    public Cliente(Integer id, String nome, String email, String senha) {
         this.id = id;
         this.nome = nome;
         this.email = email;
@@ -15,11 +24,11 @@ public class cliente {
     }
 
     // getters e setters
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

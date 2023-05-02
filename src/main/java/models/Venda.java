@@ -1,16 +1,24 @@
 package models;
+import org.springframework.data.annotation.Id;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import java.util.Date;
 
-public class venda {
-    private int id;
+@Entity
+public class Venda {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
     private Date data;
-    private int id_cliente;
-    private int id_loja;
+    private Integer id_cliente;
+    private Integer id_loja;
     private double total;
 
     // construtor
-    public venda(int id, Date data, int id_cliente, int id_loja, double total) {
+    public Venda(Integer id, Date data, int id_cliente, Integer id_loja, double total) {
         this.id = id;
         this.data = data;
         this.id_cliente = id_cliente;
@@ -19,11 +27,11 @@ public class venda {
     }
 
     // getters e setters
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -35,19 +43,19 @@ public class venda {
         this.data = data;
     }
 
-    public int getId_cliente() {
+    public Integer getId_cliente() {
         return id_cliente;
     }
 
-    public void setId_cliente(int id_cliente) {
+    public void setId_cliente(Integer id_cliente) {
         this.id_cliente = id_cliente;
     }
 
-    public int getId_loja() {
+    public Integer getId_loja() {
         return id_loja;
     }
 
-    public void setId_loja(int id_loja) {
+    public void setId_loja(Integer id_loja) {
         this.id_loja = id_loja;
     }
 
