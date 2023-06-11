@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .btn-container a {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .btn-container a:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .btn-add-to-cart {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-add-to-cart:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Página Principal</h1>
+
+    <div class="btn-container">
+        <a href="/view/loja">Loja</a>
+        <a href="/view/cliente">Cliente</a>
+        <a href="/view/produto">Produto</a>
+        <a href="/view/carrinho">Ver Carrinho</a>
+    </div>
+
+    <h2>Produtos Disponíveis</h2>
+
+    <table>
+        <tr>
+            <th>Nome do Produto</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Ação</th>
+        </tr>
+        <tr>
+            <td>Produto A</td>
+            <td>Descrição do Produto A</td>
+            <td>R$ 10,00</td>
+            <td>5</td>
+            <td><button class="btn-add-to-cart" onclick="addToCart('Produto A')">Comprar</button></td>
+        </tr>
+        <tr>
+            <td>Produto B</td>
+            <td>Descrição do Produto B</td>
+            <td>R$ 20,00</td>
+            <td>3</td>
+            <td><button class="btn-add-to-cart" onclick="addToCart('Produto B')">Comprar</button></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+        function addToCart(productName) {
+            // Aqui você pode implementar a lógica para adicionar o produto ao carrinho
+            // Você pode fazer uma requisição AJAX para enviar os dados do produto ao servidor e atualizar o carrinho
+            console.log('Produto adicionado ao carrinho:', productName);
+        }
+    </script>
+</body>
+</html>

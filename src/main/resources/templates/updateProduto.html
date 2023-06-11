@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Atualizar Produto</title>
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            resize: vertical;
+        }
+
+        .btn-container {
+            text-align: center;
+        }
+
+        .btn-container button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-container button:hover {
+            background-color: #45a049;
+        }
+
+        .btn-container a {
+            background-color: #f44336;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn-container a:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+  <h1>Atualizar Produto</h1>
+
+  <form action="../view/updateProduto" method="POST">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" value="1" readonly>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" value="Produto A" required>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required>Descrição do Produto A</textarea>
+
+    <label for="preco">Preço:</label>
+    <input type="number" id="preco" name="preco" step="0.01" value="10.00" required>
+
+    <label for="quantidade">Quantidade:</label>
+    <input type="number" id="quantidade" name="quantidade" value="20" required>
+
+    <div class="btn-container">
+      <button type="submit">Atualizar</button>
+      <a href="../view/produto">Cancelar</a>
+    </div>
+  </form>
+</div>
+</body>
+</html>

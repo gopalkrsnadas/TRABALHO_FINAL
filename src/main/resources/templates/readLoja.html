@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualizar Loja</title>
+  <style>
+    /* Estilos CSS aqui */
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Visualizar Loja</h1>
+
+  <form action="../view/readLoja" method="POST">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" placeholder="Informe o ID da loja">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Informe o nome da loja">
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" placeholder="Informe o endereço da loja">
+
+    <div class="btn-container">
+      <button type="submit">Buscar</button>
+      <a href="../view/loja">Cancelar</a>
+    </div>
+  </form>
+
+</div>
+</body>
+</html>

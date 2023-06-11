@@ -5,29 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="509e480a-943c-4aac-8c06-c6984494ed14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/CarrinhoDeComprasRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/LojaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/ProdutoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/repository/VendaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CarrinhoDeComprasService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CarrinhoDeComprasServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ClienteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LojaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LojaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ProdutoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/ProdutoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/VendaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/VendaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CarrinhoDeComprasController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/CarrinhoDeComprasRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ClienteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ClienteRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LojaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/LojaRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/ProdutoRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/VendaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/VendaRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/deleteCliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/deleteLoja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/deleteProduto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/insertCliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/insertLoja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/insertProduto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/readCarrinhodeCompras.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/readCliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/readLoja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/readProduto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updatCliente.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updateLoja.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/updateProduto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/carrinhoDeCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/CarrinhoDeCompras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Loja.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/CarrinhoDeCompras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/CarrinhoDeCompras.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Loja.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Loja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Venda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Venda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/CarrinhoDeComprasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/CarrinhoDeComprasRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/LojaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/LojaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ProdutoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/ProdutoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/VendaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/VendaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CarrinhoDeComprasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CarrinhoDeComprasService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CarrinhoDeComprasServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/CarrinhoDeComprasServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ClienteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/LojaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LojaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/LojaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LojaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProdutoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProdutoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/ProdutoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/ProdutoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/VendaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/VendaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/VendaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/VendaServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +62,28 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/org/example/service/CarrinhoDeComprasServiceImpl.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2OYfoYOSyBd44su2OE6hswEzirG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -59,6 +96,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -66,6 +104,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="controller" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -82,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681750343233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="service e repository">
+      <created>1683048961035</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683048961035</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -99,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="models" />
-    <option name="LAST_COMMIT_MESSAGE" value="models" />
+    <MESSAGE value="service e repository" />
+    <option name="LAST_COMMIT_MESSAGE" value="service e repository" />
   </component>
 </project>
