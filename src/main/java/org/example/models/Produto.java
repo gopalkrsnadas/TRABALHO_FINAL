@@ -2,9 +2,7 @@ package org.example.models;
 
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 
 @Entity
 public class Produto {
@@ -16,6 +14,11 @@ public class Produto {
     private String descricao;
     private double preco;
     private Integer quantidade;
+
+    @ManyToOne
+    @JoinColumn(name = "carrinhoDeCompras_id", nullable = false)
+    private CarrinhoDeCompras carrinhoDeCompras;
+
 
 
     public Integer getId() {

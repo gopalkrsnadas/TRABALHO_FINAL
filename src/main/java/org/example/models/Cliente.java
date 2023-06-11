@@ -2,9 +2,8 @@ package org.example.models;
 
 
 import org.springframework.data.annotation.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
+import javax.persistence.*;
 
 
 //@Entity = Define que a classe é um entidade/model
@@ -19,6 +18,10 @@ public class Cliente {
     private String nome;
     private String email;
     private String senha;
+
+    @ManyToOne
+    @JoinColumn(name="carrinhoDeCompras_id", nullable=false)
+    private Cliente cliente;
 
 
 

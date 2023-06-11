@@ -1,9 +1,7 @@
 package org.example.models;
 import org.springframework.data.annotation.Id;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+import javax.persistence.*;
 import java.util.List;
 
 
@@ -17,6 +15,10 @@ public class CarrinhoDeCompras {
     private int idcliente;
     private List<Produto> Produtos;
     private List<Integer> quantidade;
+
+    @OneToMany(mappedBy = "carrinhoDeCompras")
+    private List<Produto> produtos;
+
 
 
     // getters e setters

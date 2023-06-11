@@ -1,9 +1,9 @@
 package org.example.models;
 import org.springframework.data.annotation.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Venda {
@@ -16,6 +16,8 @@ public class Venda {
     private Integer idloja;
     private double total;
 
+    @OneToMany(mappedBy = "venda")
+    private List<Loja> lojas;
 
     public Integer getId() {
         return id;

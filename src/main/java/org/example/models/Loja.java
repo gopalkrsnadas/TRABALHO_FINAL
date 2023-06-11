@@ -2,9 +2,10 @@ package org.example.models;
 
 import org.apache.http.annotation.Contract;
 import org.springframework.data.annotation.Id;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
+
+import javax.persistence.*;
+import java.util.List;
+
 @Entity
 public class Loja {
     @Id
@@ -12,6 +13,10 @@ public class Loja {
     private Integer id;
     private String nome;
     private String endereco;
+
+    @ManyToOne
+    @JoinColumn(name = "venda_id")
+    private Venda venda;
 
 
 
